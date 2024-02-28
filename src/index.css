@@ -1,13 +1,126 @@
+html {
+  font-size: 14px;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-family);
+  font-weight: normal;
+  background: var(--surface-ground);
+  color: var(--text-color);
+  padding: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  background: var(--surface-card);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.invalid-feedback {
+  padding-right: 42%;
+}
+.psw {
+  padding-right: 40%;
+}
+form {
+  border: 3px solid #f1f1f1;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  max-width: 50vw;
+}
+.addressAdd .p-button {
+  margin-right: 3%;
+}
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.buttonContainer {
+  padding: 5px;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.p-button {
+  margin: 0;
+  display: inline-flex;
+  cursor: pointer;
+  user-select: none;
+  align-items: center;
+  vertical-align: bottom;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.form-group {
+  margin: 25px auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50vw;
+}
+@media screen and ((min-width: 1024px) and (max-width:1440px)) {
+  .p-button {
+    width: 25%;
+    justify-content: center;
+  }
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  .form {
+    display: flex;
+  }
+
+  .form-group {
+    padding: 12px;
+    width: 50%;
+    display: inline-block;
+  }
+
+  .form-group input {
+    width: 100%;
+  }
+}
+.addressAdd {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.textAlignCenter {
+  text-align: center;
 }
